@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('hello') {
       steps {
-        sh 'hello.ps1'
+        sh 'pwsh hello.ps1'
       }
     }
   }
