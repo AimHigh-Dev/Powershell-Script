@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('hello') {
       steps {
-        sh 'pwsh hello.ps1'
+        Write-Host 'Hello, World!'
       }
     }
   }
