@@ -1,10 +1,14 @@
 pipeline {
   agent any
   stages {
+    stage('version') {
+      steps {
+        sh 'pwsh --version'
+      }
+    }
     stage('hello') {
       steps {
-        Write-Host 'Hello, World!'
+        sh 'pwsh hello.ps1'
       }
     }
   }
-}
